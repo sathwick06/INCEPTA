@@ -12,7 +12,7 @@ It operates like a team of collaborative developers. It interprets natural langu
 - **Coder Agent** – Implements each task, writes directly into files, and uses available tools like a real developer.
 
 <div style="text-align: center;">
-    <img src="workflow/incepta_workflow" alt="Coder Agent Architecture" width="90%"/>
+    <img src="workflow/incepta_workflow.png" alt="Coder Agent Architecture" width="90%"/>
 </div>
 
 ---
@@ -39,3 +39,4 @@ Now that we are done with all the set-up & installation steps we can start the a
 
 ---
 Copyright©️ Codebasics Inc. All rights reserved.
+
