@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibrantTodo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app" class="theme-light">
+        <!-- Header -->
+        <header>
+            <h1>VibrantTodo</h1>
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </header>
+        <!-- Input Section -->
+        <section class="new-task-section">
+            <input id="new-task-input" type="text" placeholder="What needs to be done?" aria-label="New task" />
+            <input id="new-task-due" type="date" aria-label="Due date" />
+            <button id="add-task-btn">Add</button>
+        </section>
+        <!-- Task List -->
+        <ul id="task-list" class="task-list" role="list">
+            <!-- Example task item (will be generated dynamically) -->
+            <li class="task-item" role="listitem" draggable="true" data-id="example">
+                <!-- Task content will be inserted here -->
+            </li>
+        </ul>
+        <!-- Footer -->
+        <footer>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button id="clear-completed">Clear Completed</button>
+            <span id="tasks-left" aria-live="polite"></span>
+        </footer>
+    </div>
+</body>
+</html>
